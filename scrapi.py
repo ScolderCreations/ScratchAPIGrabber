@@ -1,13 +1,23 @@
 # You are free to use this program in any situation, private or public. In public situations, you should provide credit.
 
 print("loading...")
+import sys
+webargumen = sys.argv[1]
 print("credit:")
 print("Code made by ScolderCreations. API made by the Scratch Team.")
 print()
 import requests
 INFO = "lol wut"
 wanna = "yes"
-if "y" in input("Use a preset? "):
+if "preset" in webargumen: # preset argument
+  datType = input("What type of data do you want? 1: User 2: Project ") 
+  if "1" in datType:
+    INFO = "/users/" + input("What is your username? ")
+  elif "2" in datType:
+    INFO = "/projects/" + input("insert a Project ID: ")
+  else:
+    INFO = input("Please insert parameters ")
+elif "y" in input("Use a preset? "): # nonpreset argument
   datType = input("What type of data do you want? 1: User 2: Project ")
   if "1" in datType:
     INFO = "/users/" + input("What is your username? ")
