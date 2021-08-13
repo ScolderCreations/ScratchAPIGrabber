@@ -1,4 +1,9 @@
+# You are free to use this program in any situation, private or public. In public situations, you should provide credit.
+
 print("loading...")
+print("credit:")
+print("Code made by ScolderCreations. API made by the Scratch Team.")
+print()
 import requests
 INFO = "lol wut"
 wanna = "yes"
