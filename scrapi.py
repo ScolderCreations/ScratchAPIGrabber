@@ -2,7 +2,6 @@
 
 print("loading...")
 import sys
-webargumen = sys.argv[1] # allows this to connect with web ig
 print("credit:")
 print("Code made by ScolderCreations. API made by the Scratch Team.") # don't remove this
 print()
